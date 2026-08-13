@@ -128,6 +128,17 @@ Rust tests belong beside the code they cover in `src-tauri/src/`, using `#[cfg(t
 
 History currently uses Conventional Commit-style messages, for example `feat(glory): project initialization`. Continue with concise messages such as `fix(ui): prevent empty greeting`. Keep commits focused.
 
+Commit messages must contain a subject line only — no body.
+
+Commit only under the contributor's own identity. If `user.name` / `user.email` is not yet configured for the repository, stop and ask the user to set it before committing:
+
+```bash
+git config user.name "your name"
+git config user.email "your email"
+```
+
+Run without `--global` to scope the value to this repo.
+
 Use these conventional commit types:
 
 - **feat** - New feature
