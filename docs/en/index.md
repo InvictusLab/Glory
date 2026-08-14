@@ -8,10 +8,10 @@ hero:
   actions:
     - theme: brand
       text: Get Started
-      link: /en/getting-started
+      link: /getting-started
     - theme: alt
       text: Architecture
-      link: /en/architecture
+      link: /architecture
 
 features:
   - title: Tauri v2
