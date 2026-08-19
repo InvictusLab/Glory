@@ -1,3 +1,5 @@
+> **Instructions in this file and CLAUDE.md take precedence over all skills / plugins; in case of conflict, this file governs.**
+
 # Repository Guidelines
 
 ## Project Structure & Module Organization
@@ -126,11 +128,9 @@ Rust tests belong beside the code they cover in `src-tauri/src/`, using `#[cfg(t
 
 ## Commit Message Guidelines
 
-History currently uses Conventional Commit-style messages, for example `feat(glory): project initialization`. Continue with concise messages such as `fix(ui): prevent empty greeting`. Keep commits focused.
+Continue using Conventional Commit style with concise, focused messages — subject line only, no body (e.g., `feat(glory): project initialization`, `fix(ui): prevent empty greeting`).
 
-Commit messages must contain a subject line only — no body.
-
-Commit only under the contributor's own identity. If `user.name` / `user.email` is not yet configured for the repository, stop and ask the user to set it before committing:
+Commit only under the contributor's own identity. Attempt the commit directly. If git rejects it because `user.name` / `user.email` is not configured, show the user how to set it before retrying:
 
 ```bash
 git config user.name "your name"
