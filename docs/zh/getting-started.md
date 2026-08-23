@@ -29,7 +29,7 @@ pnpm dev
 pnpm tauri dev
 ```
 
-> Vite 开发服务器固定使用端口 `1420`（`strictPort: true`）。启动前请确保该端口未被占用。
+> Vite 开发服务器固定使用端口 `2420`（`strictPort: true`）。启动前请确保该端口未被占用。
 
 ## 构建
 

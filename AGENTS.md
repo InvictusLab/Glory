@@ -22,7 +22,7 @@ This is a Tauri v2 desktop application with a Vite + React + TypeScript frontend
 - **Config:** `src-tauri/tauri.conf.json`.
   - `beforeDevCommand` runs `pnpm dev`.
   - `beforeBuildCommand` runs `pnpm build`.
-  - Dev server is fixed at `http://localhost:1420` (see `vite.config.ts`).
+  - Dev server is fixed at `http://localhost:2420` (see `vite.config.ts`).
   - The library crate is named `glory_lib`; the binary calls `glory_lib::run()`.
 - **Capabilities:** `src-tauri/capabilities/default.json` grants `core:default` and `opener:default`. Keep it aligned with any added plugin or API.
 - **Icons:** `src-tauri/icons/` contains packaged application icons. Do not hand-edit generated icon variants.
@@ -95,7 +95,7 @@ Build the full Tauri app (production frontend + Rust binary):
 pnpm tauri build
 ```
 
-The Vite dev server uses port `1420` with `strictPort: true`; free that port before starting development.
+The Vite dev server uses port `2420` with `strictPort: true`; free that port before starting development.
 
 ## Coding Style & Naming Conventions
 

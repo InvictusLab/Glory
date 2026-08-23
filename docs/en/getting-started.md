@@ -29,7 +29,7 @@ Start the Tauri dev window (frontend + Rust backend):
 pnpm tauri dev
 ```
 
-> The Vite dev server uses a fixed port `1420` with `strictPort: true`. Free that port before starting.
+> The Vite dev server uses a fixed port `2420` with `strictPort: true`. Free that port before starting.
 
 ## Build
 

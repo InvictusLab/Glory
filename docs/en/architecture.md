@@ -25,7 +25,7 @@ Glory is a Tauri v2 desktop app composed of a Vite + React 19 + TypeScript front
 - Config: `src-tauri/tauri.conf.json`
   - `beforeDevCommand` runs `pnpm dev`
   - `beforeBuildCommand` runs `pnpm build`
-  - Dev server fixed at `http://localhost:1420` (see `vite.config.ts`)
+  - Dev server fixed at `http://localhost:2420` (see `vite.config.ts`)
 - Capabilities: `src-tauri/capabilities/default.json` grants `core:default` and `opener:default`
 - Icons: `src-tauri/icons/` (generated — do not hand-edit)
 

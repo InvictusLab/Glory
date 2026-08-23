@@ -25,7 +25,7 @@ Glory 是一个 Tauri v2 桌面应用，由 Vite + React 19 + TypeScript 前端�
 - 配置：`src-tauri/tauri.conf.json`
   - `beforeDevCommand` 运行 `pnpm dev`
   - `beforeBuildCommand` 运行 `pnpm build`
-  - 开发服务器固定为 `http://localhost:1420`（见 `vite.config.ts`）
+  - 开发服务器固定为 `http://localhost:2420`（见 `vite.config.ts`）
 - 能力（Capabilities）：`src-tauri/capabilities/default.json` 授予 `core:default` 与 `opener:default`
 - 图标：`src-tauri/icons/`（由工具生成，请勿手改）
 
