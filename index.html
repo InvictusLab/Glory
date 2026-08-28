@@ -4,8 +4,23 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Glory</title>
+    <script>
+      // Apply theme class before first paint to avoid FOUC.
+      // Mirrors resolveTheme() in src/components/theme-provider.tsx — keep in sync by hand.
+      (function () {
+        var stored = localStorage.getItem("glory-theme");
+        var prefersDark = window.matchMedia(
+          "(prefers-color-scheme: dark)",
+        ).matches;
+        var dark =
+          stored === "dark" ||
+          ((stored === "system" || !stored) && prefersDark);
+        var root = document.documentElement;
+        root.classList.remove("light", "dark");
+        root.classList.add(dark ? "dark" : "light");
+      })();
+    </script>
   </head>
-
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>

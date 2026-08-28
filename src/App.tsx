@@ -1,8 +1,10 @@
+import { ModeToggle } from "@/components/mode-toggle";
+
 function App() {
   return (
-    <main>
-      <h1>Glory</h1>
-    </main>
+    <div className="flex min-h-svh items-start justify-end p-4">
+      <ModeToggle />
+    </div>
   );
 }
 
